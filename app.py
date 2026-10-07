@@ -54,8 +54,8 @@ except Exception as exc:
 with st.sidebar:
     st.header('1 · Filtros iniciales')
     with st.form('filtros'):
-        wmin=st.number_input('|WoE| mínimo',min_value=0.,value=.34,step=.02,format='%.2f')
-        fmin=st.number_input('Frecuencia mínima (reseñas)',min_value=1,value=2000,step=500)
+        wmin=st.number_input('|WoE| mínimo',min_value=0.,value=.36,step=.01,format='%.2f')
+        fmin=st.number_input('Frecuencia mínima (reseñas)',min_value=1,value=2500,step=100)
         st.form_submit_button('Aplicar filtros',use_container_width=True)
     st.caption('Frecuencia = reseñas de entrenamiento con la palabra; no es la cantidad de palabras del vocabulario.')
     st.caption('WoE y selección: entrenamiento (80%). Indicadores: validación (20%). Semilla: 42.')
