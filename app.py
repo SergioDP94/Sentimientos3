@@ -41,7 +41,7 @@ def nube_cache(words,counts,woes):
     wc.recolor(color_func=lambda word,**kwargs:color[word],random_state=42)
     buff=io.BytesIO();wc.to_image().save(buff,format='PNG');return buff.getvalue()
 
-path=ROOT/'IMDB Dataset.csv'
+path = ROOT / 'IMDB Dataset.zip'
 if not path.exists():
     st.info('Coloca IMDB Dataset.csv en esta carpeta y vuelve a cargar la página:')
     st.code(str(ROOT));st.stop()
